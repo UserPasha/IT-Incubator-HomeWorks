@@ -1,17 +1,35 @@
 .superInput {
-    width: 200px;
-    height: 30px;
-    margin-top: 10px;
-    font-size: 1.2em;
-    background-color: transparent;
+    width: 60px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
     border: none;
-    border-top: 3px solid #4EA5D9;
-    border-bottom: 3px solid #4EA5D9;
+    padding: 10px 25px;
     outline: none;
-    color: #4EA5D9;
-    padding-left: 10px;
+    font-size: 1.1em;
+    color: #555;
+    background: linear-gradient(#dbdae1, #a3aaba);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.1),
+    6px 6px 6px rgba(0,0,0,0.1),
+    10px 10px 8px rgba(0,0,0,0.1),
+    14px 14px 8px rgba(0,0,0,0.1),
+    inset 2px 2px 4px #fff;
 }
-
+.superInput:hover{
+    width: 250px;
+}
+.superInput:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+}
 
 .errorInput {
     border: 3px solid #4EA5D9;
