@@ -1,0 +1,20 @@
+.someClass {
+
+}
+
+.error {
+    border: 1px solid red;
+    color: red;
+    width: 200px;
+}
+.wrapper{
+    margin-left: 20px;
+}
+
+.wrapper button {
+    border-radius: 10px;
+    font-weight: bolder;
+    background-color: #748f3c;
+    box-shadow: 2px 2px 2px dimgray;
+    margin-right: 10px;
+}
