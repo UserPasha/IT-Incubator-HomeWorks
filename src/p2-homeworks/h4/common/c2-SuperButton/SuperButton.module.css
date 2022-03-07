@@ -1,6 +1,45 @@
 .default {
-
+    width: 80px;
+    height: 25px;
+    background-color: #4EA5D9;
+    color: white;
+    cursor: pointer;
 }
+
+
+.default:disabled {
+    width: 80px;
+    height: 25px;
+    background-color: #a5a6a8;
+    color: #0a0000;
+    cursor: not-allowed;
+}
+
+.default:disabled:hover {
+    width: 80px;
+    height: 25px;
+    background-color: #a5a6a8;
+    color: #0a0000;
+    cursor: not-allowed;
+}
+
+.default:focus {
+    width: 90px;
+    height: 35px;
+    background-color: #2aa8f3;
+    color: #faf7f7;
+    cursor: pointer;
+    border: 1px solid #faf7f7;
+}
+
+.default:hover {
+    width: 85px;
+    height: 30px;
+    background-color: #2d6f96;
+    color: #ccc9c9;
+    cursor: pointer;
+}
+
 
 .red {
     background: red;
