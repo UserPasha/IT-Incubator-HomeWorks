@@ -33,9 +33,10 @@
 
 .errorInput {
     border: 3px solid #4EA5D9;
-    background:  #f63b3b;;
+    /*background:  #f63b3b;*/
+    color: black;
 }
 
 .error {
-    color: #f63b3b;
+    color: #fd4545;
 }

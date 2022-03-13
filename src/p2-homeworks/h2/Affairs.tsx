@@ -48,6 +48,7 @@ function Affairs(props: AffairsPropsType) {
             <SuperButton onClick={setHigh}>High</SuperButton>
             <SuperButton onClick={setMiddle}>Middle</SuperButton>
             <SuperButton onClick={setLow}>Low</SuperButton>
+
         </div>
     )
 }

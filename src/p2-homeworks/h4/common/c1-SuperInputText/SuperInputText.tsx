@@ -50,7 +50,7 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
                 onChange={onChangeCallback}
                 onKeyPress={onKeyPressCallback}
                 className={finalInputClassName}
-            //    placeholder={"Enter your message"}
+                placeholder={" o o o    Enter your message..."}
                 {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
 
             />

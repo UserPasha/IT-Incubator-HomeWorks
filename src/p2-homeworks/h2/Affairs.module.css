@@ -1,11 +1,16 @@
 .hw2Wrapper {
+
     padding: 10px;
     margin-left: 20px;
+    margin-top: 10px;
     width: 650px;
-    height: 380px;
+    /*height: 380px;*/
+    min-height: 50px;
+    max-height: 500px;
     background-color: #06c9fa;
     border: 1px solid #031803;
 }
+
 
 /*.hw2Wrapper button {*/
 /*    border-radius: 10px;*/
