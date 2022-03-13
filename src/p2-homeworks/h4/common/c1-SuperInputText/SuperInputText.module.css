@@ -1,6 +1,6 @@
 .superInput {
     width: 60px;
-    height: 15px;
+    height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,9 +33,9 @@
 
 .errorInput {
     border: 3px solid #4EA5D9;
-    background: red;
+    background:  #f63b3b;;
 }
 
 .error {
-    color: red;
+    color: #f63b3b;
 }

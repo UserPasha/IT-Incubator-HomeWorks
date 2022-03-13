@@ -1,20 +1,29 @@
 .affairWrap {
+    display: flex;
     font-weight: bolder;
     font-family: sans-serif;
-    width: 280px;
-    height: 30px;
+    font-size: 20px;
+    width: 650px;
+    height: 60px;
     position: relative;
 }
-.affairWrap .text{
-    margin-left: 20px;
- }
-.ButtonAf {
-    position: absolute;
-    right: 10px;
+
+.affairWrap .text {
+    width: 200px;
+    margin-left: 10px;
+
 }
-.affairWrap .text span{
-    position: absolute;
-    right: 50px;
+
+.affairWrap .spanWrapper {
+    width: 200px;
+    margin-left: 50px;
     opacity: 50%;
     color: #26310f;
+
+}
+.affairWrap .buttWrapper {
+
+    width: 200px;
+    margin-left: 80px;
+
 }

@@ -1,16 +1,16 @@
 .hw2Wrapper {
     padding: 10px;
     margin-left: 20px;
-    width: 300px;
-    height: 180px;
-    background-color: #97cddc;
+    width: 650px;
+    height: 380px;
+    background-color: #06c9fa;
     border: 1px solid #031803;
 }
 
-.hw2Wrapper button {
-    border-radius: 10px;
-    font-weight: bolder;
-    background-color: #748f3c;
-    box-shadow: 2px 2px 2px dimgray;
-    margin-left: 15px;
-   }
+/*.hw2Wrapper button {*/
+/*    border-radius: 10px;*/
+/*    font-weight: bolder;*/
+/*    background-color: #748f3c;*/
+/*    box-shadow: 2px 2px 2px dimgray;*/
+/*    margin-left: 15px;*/
+/*   }*/

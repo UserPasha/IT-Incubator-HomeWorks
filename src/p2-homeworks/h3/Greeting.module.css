@@ -8,6 +8,7 @@
     width: 200px;
 }
 .wrapper{
+    display: flex;
     margin-left: 20px;
 }
 
