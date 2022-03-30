@@ -46,7 +46,8 @@
     width: 160px;
     height: 50px;
     line-height: 48px;
-    background: #fa4343;
+    background: #ea2020;
+    color: #ccc9c9;
     text-transform: uppercase;
     font-size: 20px;
     letter-spacing: 4px;
@@ -185,8 +186,8 @@
     position: absolute;
     display: block;
     top: 5px;
-    left: 0px;
-    right: 0px;
+    left: 0;
+    right: 0;
     bottom: 5px;
     text-align: center;
     color: #000000;

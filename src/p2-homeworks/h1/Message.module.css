@@ -1,7 +1,10 @@
 
+.hwTitle{
+    margin-left: 30px;
+}
 .wrapper {
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 30px;
     display: flex;
     width: 450px;
     min-height: 100px;

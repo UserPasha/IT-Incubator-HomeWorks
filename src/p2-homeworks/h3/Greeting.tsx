@@ -41,7 +41,7 @@ const Greeting: React.FC<GreetingPropsType> = (
 
 
             <span>{totalUsers}</span>
-            {error && <div className={s.error}>{error}</div>}
+           {/* {error && <div className={s.error}>{error}</div>}*/}
 
         </div>
     )

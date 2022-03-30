@@ -1,6 +1,6 @@
 .superInput {
     width: 60px;
-    height: 25px;
+    height: 28px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,12 +10,8 @@
     outline: none;
     font-size: 1.1em;
     color: #555;
-    background: linear-gradient(#dbdae1, #a3aaba);
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.1),
-    6px 6px 6px rgba(0,0,0,0.1),
-    10px 10px 8px rgba(0,0,0,0.1),
-    14px 14px 8px rgba(0,0,0,0.1),
-    inset 2px 2px 4px #fff;
+    background: linear-gradient( #a3aaba, #dbdae1, #dbdae1,#dbdae1,#a3aaba);
+
 }
 .superInput:hover{
     width: 250px;
@@ -38,5 +34,10 @@
 }
 
 .error {
-    color: #fd4545;
+    border: 4px solid #ea2020;
+    color: white;
+    width: 200px;
+    background-color: #a3aaba;
+    font-size: 26px;
+    margin: 0 10px;
 }

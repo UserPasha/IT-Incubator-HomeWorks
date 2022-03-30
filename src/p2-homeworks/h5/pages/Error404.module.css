@@ -1,0 +1,24 @@
+.wrapper{
+    min-width: 100vh;
+    min-height: 100vh;
+    background-color: #06c9fa;
+    display: flex;
+    font-family: sans-serif;
+}
+.digits{
+    padding: 150px 0 0 150px;
+    font-size: 140px;
+    font-weight: bolder;
+}
+.text{
+    padding: 180px 0 0 150px;
+    color: #ccc9c9;
+    font-size: 90px;
+    font-weight: bolder;
+}
+.smile{
+    font-size: 90px;
+    position: absolute;
+    top: 400px;
+    left: 500px;
+}
