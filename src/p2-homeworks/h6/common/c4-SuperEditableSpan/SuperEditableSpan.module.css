@@ -1,0 +1,9 @@
+.editWrapper{
+    font-size: 30px;
+    color: #fff;
+}
+
+.editWrapper:hover{
+    font-weight: bolder;
+    color: #61dafb;
+}
