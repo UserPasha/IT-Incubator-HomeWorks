@@ -55,7 +55,7 @@
 
 .message .name {
     color: #282c34;
-
+    font-weight: bolder;
 }
 
 .message .text {
@@ -67,7 +67,7 @@
 
 .message .date {
     color: #06c9fa;
-    /* position: absolute;*/
+    font-weight: bolder;
     right: 10px;
     bottom: 1px;
 }

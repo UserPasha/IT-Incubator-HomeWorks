@@ -1,5 +1,5 @@
 .superInput {
-    width: 60px;
+    width: 220px;
     height: 28px;
     display: flex;
     justify-content: center;
@@ -10,11 +10,12 @@
     outline: none;
     font-size: 1.1em;
     color: #555;
-    background: linear-gradient( #a3aaba, #dbdae1, #dbdae1,#dbdae1,#a3aaba);
-
+    background: linear-gradient( #5c5d60, #a3aaba, #dbdae1,#dbdae1,#a3aaba, #5c5d60);
+    border-radius: 20px;
+    border: #06c9fa 3px solid;
 }
 .superInput:hover{
-    width: 250px;
+    width: 280px;
 }
 .superInput:before{
     content: "";

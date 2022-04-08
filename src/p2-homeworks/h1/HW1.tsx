@@ -9,8 +9,8 @@ export type MessageDataPropsType = {
 }
 const messageData: MessageDataPropsType = {
     avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
-    name: 'Some Name',
-    message: 'some ghghgfhfghfhfghfghfghfghfhfghfdffdgfdfghfghfghgfhmbmbmbmbmm,.nm.,mn,mn,m',
+    name: 'Support',
+    message: 'some hello from wednesday!',
     time: '22:00',
 }
 
