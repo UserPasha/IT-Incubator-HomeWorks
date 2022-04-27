@@ -4,7 +4,7 @@ type DefaultSelectPropsType = DetailedHTMLProps<SelectHTMLAttributes<HTMLSelectE
 
 type SuperSelectPropsType = DefaultSelectPropsType & {
     options?: any[]
-    onChangeOption?: (option: any) => void
+    onChangeOption: (option: any) => void
 }
 
 const SuperSelect: React.FC<SuperSelectPropsType> = (
@@ -14,10 +14,16 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
         ...restProps
     }
 ) => {
-    const mappedOptions: any[] = []; // map options with key
+    const mappedOptions: any[]= options ? options.map((m, index)=> <option key={index}>{m}</option>):[]; // map options with key
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
         // onChange, onChangeOption
+        // const onChange = e.currentTarget.value
+        // onChangeOption(onChange)
+        onChange && onChange(e)
+        onChangeOption && onChangeOption(e.currentTarget.value)
+
+
     }
 
     return (

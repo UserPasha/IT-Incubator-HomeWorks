@@ -5,6 +5,7 @@ import HW3 from '../../h3/HW3'
 import HW4 from '../../h4/HW4'
 import HW6 from '../../h6/HW6'
 
+
 function PreJunior() {
     return (
         <div>
@@ -13,7 +14,6 @@ function PreJunior() {
             <HW3/>
             <HW4/>
             <HW6/>
-
         </div>
     )
 }
