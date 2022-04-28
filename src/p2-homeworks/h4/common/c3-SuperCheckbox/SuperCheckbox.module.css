@@ -12,7 +12,7 @@ label input {
     display: none;
 }
 .checkbox {
-color: #61dafb;
+color: var(--main-color);
 }
 
 
@@ -37,7 +37,7 @@ label span.spanClassName::before{
     transition: 0.5s;
 }
 label input:checked ~ span.spanClassName::before {
-    background: #61dafb;
+    background: var(--main-color);
     box-shadow: 0 0 0 transparent;
 }
 label span.spanClassName::after{
@@ -53,7 +53,7 @@ label span.spanClassName::after{
 }
 label input:checked ~ span.spanClassName::after {
     height: 50%;
-    background: #61dafb;
+    background: var(--main-color);
     box-shadow: 0 0 0 transparent;
 
 }

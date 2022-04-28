@@ -1,7 +1,7 @@
 .default {
     width: 80px;
     height: 25px;
-    background-color: #4EA5D9;
+    background-color: var(--main-color);
     color: white;
     cursor: pointer;
 }
@@ -26,7 +26,7 @@
 .default:focus {
     width: 90px;
     height: 35px;
-    background-color: #2aa8f3;
+    background-color: var(--main-color);
     color: #faf7f7;
     cursor: pointer;
     border: 1px solid #faf7f7;
@@ -35,7 +35,7 @@
 .default:hover {
     width: 85px;
     height: 30px;
-    background-color: #2d6f96;
+    background-color: var(--main-color);
     color: #ccc9c9;
     cursor: pointer;
 }
@@ -77,10 +77,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background:linear-gradient(90deg,  #06c9fa,
-    #a9a8a8,  #06c9fa,
-    #a9a8a8,  #06c9fa,
-    #a9a8a8, #06c9fa,
+    background:linear-gradient(90deg,  var(--main-color),
+    #a9a8a8,  var(--main-color),
+    #a9a8a8,  var(--main-color),
+    #a9a8a8, var(--main-color),
     #a9a8a8);
    /* background:linear-gradient(45deg, #fb0094, #00f, #0f0,
     #ff0, #f00,#fb0094, #00f, #0f0,
@@ -97,10 +97,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background:linear-gradient(90deg,  #06c9fa,
-    #a9a8a8,  #06c9fa,
-    #a9a8a8,  #06c9fa,
-    #a9a8a8, #06c9fa,
+    background:linear-gradient(90deg,  var(--main-color),
+    #a9a8a8,  var(--main-color),
+    #a9a8a8,  var(--main-color),
+    #a9a8a8, var(--main-color),
     #a9a8a8);
     background-size: 400%;
     opacity: 0;

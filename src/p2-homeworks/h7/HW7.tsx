@@ -14,7 +14,7 @@ function HW7() {
            {/* homeworks 7*/}
 
             {/*should work (должно работать)*/}
-            <div>
+            <div className={c.select}>
                 <SuperSelect
                     options={arr}
                     value={value}

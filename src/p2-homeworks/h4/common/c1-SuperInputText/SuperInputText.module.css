@@ -12,7 +12,7 @@
     color: #555;
     background: linear-gradient( #5c5d60, #a3aaba, #dbdae1,#dbdae1,#a3aaba, #5c5d60);
     border-radius: 20px;
-    border: #06c9fa 3px solid;
+    border: var(--main-color)3px solid;
 }
 .superInput:hover{
     width: 280px;
@@ -29,7 +29,7 @@
 }
 
 .errorInput {
-    border: 3px solid #4EA5D9;
+    border: 3px solid var(--main-color);
     /*background:  #f63b3b;*/
     color: black;
 }

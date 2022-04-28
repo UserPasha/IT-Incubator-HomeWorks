@@ -1,13 +1,15 @@
 .wrapper {
 
 }
-label{
+
+label {
 
     margin-top: 10px;
-margin-right: 10px;
+    margin-right: 10px;
     border: 1px solid black;
     display: inline;
 }
+
 .radio {
     display: flex;
     justify-content: flex-start;
@@ -35,7 +37,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked {
-    background: #06c9fa;
+    background: var(--main-color);
 }
 
 input[type="radio"]::before {
@@ -70,8 +72,22 @@ input[type="radio"]::after {
 
 input[type="radio"]:checked::after {
     left: calc(65px + 40px);
-    background: #06c9fa;
-    box-shadow: 0 0 5px #06c9fa,
-    0 0 15px #06c9fa,
-    0 0 30px #06c9fa;
+    background: var(--main-color);
+    box-shadow: 0 0 5px var(--main-color),
+    0 0 15px var(--main-color),
+    0 0 30px var(--main-color);
+}
+
+.select select {
+    border: 2px var(--main-color) solid;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background: linear-gradient( #5c5d60, #a3aaba, #dbdae1,#dbdae1,#a3aaba, #5c5d60);
+}
+.select select option{
+    background: rgba(66, 241, 241, 0.2);
+}
+.select select option:active{
+    background: var(--main-color);
 }

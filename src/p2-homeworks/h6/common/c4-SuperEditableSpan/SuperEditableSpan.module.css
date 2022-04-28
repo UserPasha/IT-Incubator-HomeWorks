@@ -5,5 +5,5 @@
 
 .editWrapper:hover{
     font-weight: bolder;
-    color: #61dafb;
+    color:var(--main-color);
 }

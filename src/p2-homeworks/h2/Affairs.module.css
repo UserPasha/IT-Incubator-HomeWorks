@@ -6,7 +6,7 @@
     width: 650px;
     min-height: 50px;
     max-height: 500px;
-    background-color: #06c9fa;
+    background-color: var(--main-color);
     border: 1px solid #031803;
 }
 
