@@ -14,9 +14,9 @@
     border-radius: 20px;
     border: var(--main-color)3px solid;
 }
-.superInput:hover{
+/*.superInput:hover{
     width: 280px;
-}
+}*/
 .superInput:before{
     content: "";
     position: absolute;
@@ -40,5 +40,11 @@
     width: 200px;
     background-color: #a3aaba;
     font-size: 26px;
-    margin: 0 10px;
+    margin: 10px 10px;
+    animation: quake 400ms;
 }
+@keyframes quake {
+    25%{transform: translateX(10px);}
+    50%{transform: translateX(-10px);}
+    75%{transform: translateX(10px);}
+ }

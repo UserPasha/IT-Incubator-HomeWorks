@@ -2,22 +2,18 @@
 
 }
 
-label {
 
-    margin-top: 10px;
-    margin-right: 10px;
-    border: 1px solid black;
-    display: inline;
-}
 
 .radio {
+    margin-top: 20px;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     min-height: 300px;
     flex-direction: column;
 }
-
+.radio label {
+    display: inline-block;
+}
 input[type="radio"] {
     position: relative;
     width: 120px;
@@ -77,7 +73,9 @@ input[type="radio"]:checked::after {
     0 0 15px var(--main-color),
     0 0 30px var(--main-color);
 }
-
+.select{
+    margin:25px 0  0 25px;
+}
 .select select {
     border: 2px var(--main-color) solid;
     width: 80px;
@@ -86,8 +84,9 @@ input[type="radio"]:checked::after {
     background: linear-gradient( #5c5d60, #a3aaba, #dbdae1,#dbdae1,#a3aaba, #5c5d60);
 }
 .select select option{
-    background: rgba(66, 241, 241, 0.2);
-}
-.select select option:active{
     background: var(--main-color);
 }
+/*
+.select select option:active{
+    background: black;
+}*/
