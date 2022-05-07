@@ -1,0 +1,17 @@
+.wrapper{
+    width: 500px;
+}
+.item{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+    padding-left: 10px;
+    display: flex;
+}
+.age{
+    width: 50px;
+    margin: 0 auto;
+}
+.name{
+    width: 450px;
+}
