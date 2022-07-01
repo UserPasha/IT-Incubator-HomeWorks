@@ -1,0 +1,38 @@
+.clockWrapper {
+    padding-top: 50px;
+    width: 300px;
+    min-height: 80px;
+    border: #4d4d4d 10px double;
+    border-radius: 20px;
+    text-align: center;
+    background-color: var(--main-color);
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.dateWrapper {
+    width: 300px;
+    height: 30px;
+    border: #7e7f80 10px double;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #0c0c0c;;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.slim {
+    width: 300px;
+    height: 30px;
+    border: #7e7f80 10px double;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #0c0c0c;;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--main-color);
+    margin-bottom: 10px;
+    letter-spacing: 10px;
+}

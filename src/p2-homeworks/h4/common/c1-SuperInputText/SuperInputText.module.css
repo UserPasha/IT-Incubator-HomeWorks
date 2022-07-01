@@ -13,10 +13,8 @@
     background: linear-gradient( #5c5d60, #a3aaba, #dbdae1,#dbdae1,#a3aaba, #5c5d60);
     border-radius: 20px;
     border: var(--main-color)3px solid;
+    caret-color: #fff;
 }
-/*.superInput:hover{
-    width: 280px;
-}*/
 .superInput:before{
     content: "";
     position: absolute;
@@ -26,6 +24,10 @@
     height: 100%;
     background: #fff;
     z-index: 1;
+}
+.superInput::selection{
+background-color: #33abd5;
+    color: black;
 }
 
 .errorInput {

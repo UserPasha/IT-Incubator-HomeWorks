@@ -1,5 +1,6 @@
 import {UserType} from "../HW8";
 
+
 type ActionType = SortType | CheckType
 type SortType = {
     type: 'sort'
