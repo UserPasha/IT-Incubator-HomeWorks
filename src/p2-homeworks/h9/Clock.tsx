@@ -9,13 +9,13 @@ function Clock() {
 
 
     const stop = () => {
-        clearInterval(timerId)
+        //clearInterval(timerId)
         window.clearInterval(timerId)   ////////////////////////
     }
     const start = () => {
         stop()
         const id: number = window.setInterval(() => {
-              setDate(new Date())        //setDate///////////////////
+            setDate(new Date())        //setDate///////////////////
         }, 1000)
         setTimerId(id)
         console.log(id)
@@ -33,9 +33,23 @@ function Clock() {
 
     // const a = date.toLocaleTimeString()
 
-    const stringTime = `${date.getHours()} : ${date.getMinutes()} : ${date.getSeconds()}` // fix with date
+    //refactor after kabzda23
+    const setDuplexDigits = (num: number)=> num > 10? num : '0'+ num
+
+    const refactedHours = setDuplexDigits(date.getHours())
+    const refactedMinutes = setDuplexDigits(date.getMinutes())
+    const refactedSeconds = setDuplexDigits(date.getSeconds())
+
+    // const refactedHours = date.getHours() > 10 ? date.getHours() : "0" + date.getHours()
+    // const refactedMinutes = date.getMinutes() > 10 ? date.getMinutes() : "0" + date.getMinutes()
+    // const refactedSeconds = date.getSeconds()> 10 ? date.getSeconds() : "0" + date.getSeconds()
+
+
+    const stringTime = `${refactedHours} : ${refactedMinutes} : ${refactedSeconds}` // fix with date
+
     // const stringDate = `${date.getDate()} : ${date.getMonth() + 1} :${date.getFullYear()}` // fix with date
     const stringDate = date.toLocaleDateString()
+
     return (
         <div>
             <div className={c.clockWrapper}
@@ -50,7 +64,7 @@ function Clock() {
                 <div className={c.dateWrapper}>
                     {stringDate}
                 </div>
-            ):(
+            ) : (
                 <div className={c.slim}>
                     DATE
                 </div>
