@@ -29,20 +29,20 @@ function Clock() {
     const onMouseLeave = () => {
         setShow(false)
     }
-    console.log(date)
+    //console.log(date)
 
     // const a = date.toLocaleTimeString()
 
     //refactor after kabzda23
-    const setDuplexDigits = (num: number)=> num > 10? num : '0'+ num
+    const setDuplexDigits = (num: number)=> num > 9? num : '0'+ num
 
     const refactedHours = setDuplexDigits(date.getHours())
     const refactedMinutes = setDuplexDigits(date.getMinutes())
     const refactedSeconds = setDuplexDigits(date.getSeconds())
 
-    // const refactedHours = date.getHours() > 10 ? date.getHours() : "0" + date.getHours()
-    // const refactedMinutes = date.getMinutes() > 10 ? date.getMinutes() : "0" + date.getMinutes()
-    // const refactedSeconds = date.getSeconds()> 10 ? date.getSeconds() : "0" + date.getSeconds()
+    // const refactedHours = date.getHours() > 9 ? date.getHours() : "0" + date.getHours()
+    // const refactedMinutes = date.getMinutes() > 9 ? date.getMinutes() : "0" + date.getMinutes()
+    // const refactedSeconds = date.getSeconds()> 9 ? date.getSeconds() : "0" + date.getSeconds()
 
 
     const stringTime = `${refactedHours} : ${refactedMinutes} : ${refactedSeconds}` // fix with date
