@@ -1,5 +1,6 @@
 import React, {ChangeEvent, DetailedHTMLProps, InputHTMLAttributes} from 'react'
 import s from './SuperRange.module.css'
+import c from "../c8-SuperDoubleRange/SuperDoubleRange.module.css";
 
 // тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
@@ -30,18 +31,39 @@ const SuperRange: React.FC<SuperRangePropsType> = (
         }
 
     }
-
-    const finalRangeClassName = `${s.range} ${className ? className : ''}`
+    const myStyles = {
+        position: 'absolute',
+        width: "100%",
+        height: "5px",
+        margin: "auto",
+        top: "0px",
+        bottom: "0px",
+        borderRadius: "5px",
+        background: `linear-gradient(to right, #dadae5 ${value1}% , #7e7f80 ${value1}% )`
+    } as React.CSSProperties;
+    //const finalRangeClassName = `${s.range} ${className ? className : ''}`
 
     return (
         <>
-            <input
-                type={'range'}
-                onChange={onChangeCallback}
-                className={finalRangeClassName}
-                value={value1}
-                {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
-            />
+            <div className={c.wrapper}>
+
+                <div className={c.values}>
+            <span>
+                {value1}
+            </span>
+                </div>
+
+                <div className={c.container}>
+                    <div style={myStyles}>{}</div>
+                    <input
+                        type={'range'}
+                        onChange={onChangeCallback}
+                        className={c.inputRange}
+                        value={value1}
+                        {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
+                    />
+                </div>
+            </div>
         </>
     )
 }

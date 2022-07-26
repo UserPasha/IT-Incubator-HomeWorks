@@ -1,7 +1,5 @@
 import React, {ChangeEvent} from 'react'
 import c from "./SuperDoubleRange.module.css"
-//import {Simulate} from "react-dom/test-utils";
-//import input = Simulate.input;
 
 type SuperDoubleRangePropsType = {
     onChangeRange?: (value: [number, number]) => void
@@ -13,15 +11,15 @@ type SuperDoubleRangePropsType = {
     min: number
     max: number
     step: number
-    disable:boolean
-    setDisable:(disable:boolean)=> void
+    disable: boolean
+    setDisable: (disable: boolean) => void
 }
 
 const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     {
         onChangeRange, value, setValue1, setValue2, value1, value2,
-        min, max, step,disable,setDisable
-        ,  ...restProps
+        min, max, step, disable, setDisable
+        , ...restProps
     }
 ) => {
     // сделать самому, можно подключать библиотеки
@@ -40,16 +38,11 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
 
 
     const handleFirstValue = (e: ChangeEvent<HTMLInputElement>) => {
-
-
         setValue1(+e.currentTarget.value)
     }
     const handleSecondValue = (e: ChangeEvent<HTMLInputElement>) => {
-
-
         setValue2(+e.currentTarget.value)
     }
-
 
 
     return (
@@ -60,15 +53,19 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
             <span>
                 {value1}
             </span>
-                        <span> ------- </span>
+                        <span> --- </span>
                         <span>
                 {value2}
             </span>
                     </div>
+
                     <div className={c.container}>
-                        <div className="sliderTrackName" style={myStyles}>{}</div>
-                        <input className={c.inputRange} type="range" value={value1} onChange={handleFirstValue}/>
-                        <input className={c.inputRange} type="range" value={value2} onChange={handleSecondValue}/>
+                        <div style={myStyles}>{}</div>
+
+                        <input className={c.inputRange} type="range" value={value1}
+                               onChange={handleFirstValue}/>
+                        <input className={c.inputRange} type="range" value={value2}
+                               onChange={handleSecondValue}/>
                     </div>
                 </div>
             </div>
