@@ -8,7 +8,7 @@ import  {AppStoreType} from "./bll/store";
 function HW10() {
     // useSelector, useDispatch
     const loading = useSelector<AppStoreType, boolean>(state => state.loading.isLoading)
-    console.log(loading)
+
     //const loading = false
     const dispatch = useDispatch()
 

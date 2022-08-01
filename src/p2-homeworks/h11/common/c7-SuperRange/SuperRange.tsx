@@ -1,5 +1,4 @@
 import React, {ChangeEvent, DetailedHTMLProps, InputHTMLAttributes} from 'react'
-import s from './SuperRange.module.css'
 import c from "../c8-SuperDoubleRange/SuperDoubleRange.module.css";
 
 // тип пропсов обычного инпута
